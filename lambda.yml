@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: AWS Lambda Template
+Resources:
+  PlaygroundFunction:
+    Type: "AWS::Lambda::Function"
+    Properties:
+      Code:
+        ZipFile: |
+          def handler(event, context):
+            return "Hello World!"
+      Description: AWS Lambda Function
+      Handler: index.handler
+      Role: arn:aws:iam::266708905441:role/cloudacademy-lab-lambda-role
+      Runtime: python3.8
