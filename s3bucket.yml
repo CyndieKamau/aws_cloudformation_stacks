@@ -1,0 +1,5 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Amazon S3 Template
+Resources:
+  PlaygroundS3Bucket:
+    Type: "AWS::S3::Bucket"
